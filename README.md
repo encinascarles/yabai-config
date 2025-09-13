@@ -7,7 +7,7 @@ Exact `yabairc` and `skhdrc` used on my Mac. Keep this repo at `~/.config/yabai`
 ```sh
 brew install koekeishiya/formulae/yabai koekeishiya/formulae/skhd
 mkdir -p "${HOME}/.config"
-git clone https://github.com/thecrax/yabai "${HOME}/.config/yabai"
+git clone https://github.com/encinascarles/yabai-config "${HOME}/.config/yabai"
 chmod +x "${HOME}/.config/yabai/scripts"/*.sh 2>/dev/null || true
 open "/System/Applications/System Settings.app" # grant Accessibility to yabai/skhd
 brew services start yabai
