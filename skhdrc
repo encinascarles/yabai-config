@@ -1,0 +1,50 @@
+#skhd --observe
+
+# Ppens apps
+alt + shift - t : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
+alt + shift - c : "${HOME}"/.config/yabai/scripts/open_arc.sh
+alt + shift - e : osascript -e 'tell application "Finder" to make new Finder window' -e 'tell application "Finder" to activate'
+alt + shift - v : cursor -n
+
+# Close all inactive apps
+alt + shift - w : "${HOME}"/.config/yabai/scripts/quit_inactive.sh
+
+# Move focus container to workspace
+shift + alt - 1 : yabai -m window --space 1;
+shift + alt - 2 : yabai -m window --space 2;
+shift + alt - 3 : yabai -m window --space 3;
+shift + alt - 4 : yabai -m window --space 4;
+shift + alt - 5 : yabai -m window --space 5;
+shift + alt - 6 : yabai -m window --space 6;
+shift + alt - 7 : yabai -m window --space 7;
+shift + alt - 8 : yabai -m window --space 8;
+shift + alt - 9 : yabai -m window --space 9;
+
+# # Move all windows to space
+alt + lctrl - 1 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 1
+alt + lctrl - 2 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 2
+alt + lctrl - 3 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 3
+alt + lctrl - 4 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 4
+alt + lctrl - 5 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 5
+alt + lctrl - 6 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 6
+alt + lctrl - 7 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 7
+alt + lctrl - 8 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 8
+alt + lctrl - 9 : "${HOME}"/.config/yabai/scripts/swap_and_return.sh 9
+
+#Move all windows to last free space
+shift + alt - return : "${HOME}"/.config/yabai/scripts/windowsAway.sh
+
+# Focus workspace
+cmd - 1 : yabai -m space --focus 1
+cmd - 2 : yabai -m space --focus 2
+cmd - 3 : yabai -m space --focus 3
+cmd - 4 : yabai -m space --focus 4
+cmd - 5 : yabai -m space --focus 5
+cmd - 6 : yabai -m space --focus 6
+cmd - 7 : yabai -m space --focus 7
+cmd - 8 : yabai -m space --focus 8
+cmd - 9 : yabai -m space --focus 9
+cmd - 0 : yabai -m space --focus 10
+cmd - 0x1B : yabai -m space --focus 11
+cmd - 0x3B : yabai -m space --focus 12
+cmd - 0x0A : yabai -m space --focus recent
